@@ -1,9 +1,13 @@
+# In recipe_app/urls.py
 from django.urls import path
-from recipe_app.views import RecipeCreate, GetAllRecipes, RecipeDelete, GetSingleRecipe
+from .views import RecipeCreate, GetAllRecipes, GetSingleRecipe, RecipeDelete, RecipeUpdate, home
+from recipe_app import views
 
 urlpatterns = [
-    path("create/", RecipeCreate.as_view(), name="create_recipe"),
-    path("get_all_recipes/", RecipeCreate.as_view(), name="get_all_recipes"),
-    path("get/<int:id>", GetSingleRecipe.as_view(), name="get_single_recipe"),
-    path("delete/<int:id>", RecipeDelete.as_view(), name="recipe_delete"),
+    path('recipe', views.home, name='home'),
+    path('recipe/create', RecipeCreate.as_view(), name='recipe-create'),
+    path('recipe/all/', GetAllRecipes.as_view(), name='get-all-recipes'),
+    path('recipe/<int:id>/', GetSingleRecipe.as_view(), name='get-single-recipe'),
+    path('recipe/delete/<int:id>/', RecipeDelete.as_view(), name='recipe-delete'),
+    path('recipe/update/<int:id>/', RecipeUpdate.as_view(), name='recipe-update'),
 ]

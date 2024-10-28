@@ -5,4 +5,4 @@ class RecipeSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Recipe
-        fields = "__al__"
+        fields = "__all__"
