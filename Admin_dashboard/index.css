@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.side-menu {
+    background: #333;
+    display: flex;
+    min-height: 100vh;
+    width: 20vw;
+    position: fixed;
+    flex-direction: column;
+}
+.logo-here {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.logo-here img {
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.logo-here img:hover {
+    cursor: pointer;
+}
+.menu-heading {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+}
+.side-menu ul {
+    margin-top: 30px;
+}
+.side-menu ul li {
+    font-size: 24px;
+    padding: 10px 40px;
+    align-items: center;
+    display: flex;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background 0.3s ease;
+}
+.side-menu ul li:hover {
+    background: #ff9f43;
+    cursor: pointer;
+}
+.fa {
+    margin-right: 7px;
+}
+.footer {
+    align-items: center;
+    margin-top: auto;
+}
+.footer footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.footer button {
+    background: none;
+    color: red;
+    border: none;
+    font-size: 20px;
+    transition: all .5s ease-in-out;
+}
+.footer button:hover {
+    color: white;
+    cursor: pointer;
+}
+.container {
+    background: whitesmoke;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+}
+.container .my-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 12vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container .my-header .my-nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.container .my-header .my-nav .search {
+    flex: 3;
+    justify-content: center;
+}
+.container .my-header .my-nav .search input[type=text] {
+    border: 2px solid #ff9f43;
+    padding: 10px;
+    font-size: 18px;
+    width: 50%;
+    border-radius: 20px;
+    outline: none;
+}
+.container .my-header .my-nav .search button {
+    flex: 1;
+    background: #ff9f43;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 100px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+a.btn {
+    background: #ff9f43;
+    text-align: center;
+    padding: 4px 5px;
+    color: white;
+}
