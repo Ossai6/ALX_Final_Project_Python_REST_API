@@ -93,7 +93,6 @@ json
             "author": 1,
             "ingredients": ["flour", "sugar", "cocoa powder"]
         }
-        // More recipes...
     ]
 }
 
