@@ -8,9 +8,9 @@ from rest_framework import permissions
 # Initialize the schema view
 schema_view = get_schema_view(
    openapi.Info(
-      title="RECIPE FINDER API",
+      title="FindMyDish API",
       default_version='v1',
-      description="The Recipe Finder API provides a comprehensive platform for users to search, find, retrieve, update, and delete recipes. Additionally, users can rate and review recipes, and perform searches based on various filters.",
+      description="This API provides a comprehensive platform for users to search, find, retrieve, update, and delete recipes. Additionally, users can rate and review recipes, and perform searches based on various filters.",
       terms_of_service="https://www.google.com/policies/terms/",
       contact=openapi.Contact(email="akpec116.com"),
       license=openapi.License(name="License"),
